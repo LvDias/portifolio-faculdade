@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang='pt-BR'>
+<head>
+  <meta charset='UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <!-- Título e descrição -->
+  <title>Portifólio</title>
+  <meta name='description' content='Página destinada a ter informações sobre mim, hobbies, o que estou estudando, e uma forma de entrar em contato comigo...'>
+  <!-- Google Fonts - Montserrat -->
+  <link rel='preconnect' href='https://fonts.googleapis.com'>
+  <link rel='preconnect' href='https://fonts.gstatic.com' crossorigin>
+  <link href='https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap' rel='stylesheet'>
+  <!-- Arquivo CSS -->
+  <link rel='stylesheet' href='/styles/global.css' />
+</head>
+<body>
+
+  <!-- Navegação -->
+  <nav>
+    <p onclick='changeContent("about")'>Sobre mim</p>
+    <p onclick='changeContent("studies")'>Formação</p>
+    <p onclick='changeContent("contact")'>Contato</p>
+  </nav>
+
+  <!-- Página - Sobre mim -->
+
+  <section id='about'>
+    <h1>Sobre mim</h1>
+
+    <h3>Apresentação:</h3>
+
+    <p>Olá! Me chamo Luan e estou na área de desenvolvimento web à 3 anos.</p>
+    <p>Já atuei na área como freelancer (hoje não estou na área), 
+      participei de grandes projetos, tive uma curva de aprendizado muito 
+      grande na época, ali vi que a prática faz com que você aprenda muito mais 
+      rápido, ainda mais quando tem metas e prazos para entregas.</p>
+    
+    <h3>Hobbies:</h3>
+    <p>Nas horas livres jogo LoL no PC e no videogame vou de jogos single-player.
+      Jogos competitivos me ajudam a desconectar do mundo, onde lá devo ser o melhor,
+      por isso junto a isso, assisto videos de pessoas que jogam melhor que eu
+      para ter aprendizados com eles.</p>
+    <p>Sou um cara da música também, toco tanto violão quanto viola.
+      Ultimamente nem tanto, mas quando fico ansioso/estressado com algo, 
+      são eles que me ajudam.</p>
+  </section>
+
+  <!-- Página - Estudos -->
+
+  <section id='studies' style='display: none;'>
+    <h1>Estudos</h1>
+
+    <p>Hoje estou cursando ADS (Análise e Desenvolvimento de Sistemas) pela faculdade Uninter.</p>
+    <p>Em relação ao ensino superior, não vou parar, logo quando terminar a que estou fazendo, 
+      quero logo depois de um tempo, começar a cursar Ciências da Computação.</p>
+
+    <p>Durante esses 3 anos praticando na área NUNCA parei de estudar, acredito
+      que isso se deve ao fato que amo fazer isso,</p>
+
+    <h3>Habilidades:</h3>
+    <ul>
+      <li>HTML, CSS e Javascript;</li>
+      <li>React.js;</li>
+      <li>Node.js;</li>
+      <li>Next.js;</li>
+      <li>Nest.js;</li>
+      <li>React Native;</li>
+      <li>C#;</li>
+      <li>SQL and NoSQL database.</li>
+    </ul>
+
+    <p>No momento estou estudando inglês, e possuo um nível intermediário na lingua.</p>
+
+    <p>Em relação aos meus projetos, deixo eles guardados no <a href='https://github.com/LvDias'>Github</a>.</p>
+  </section>
+
+  <!-- Página - Contato -->
+
+  <section id='contact' style='display: none;'>
+    <h1>Contato</h1>
+    <form action='/' method='post'>
+      <input type="text" name="name" placeholder='Nome*' required>
+      <input type="email" name="" id="" placeholder='E-mail*' required>
+      <textarea name="message" id="" cols="30" rows="10" style='resize: none;' placeholder='Assunto*' required></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+
+  <!-- Arquivo Javascript -->
+  <script src='/scripts/main.js'></script>
+  
+</body>
+</html>
